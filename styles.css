@@ -1,0 +1,359 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f26419;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+nav .nav-link:hover {
+    background-color: #d94e15;
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffeedb;
+}
+
+main h1 {
+    color: #f26419;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-comprar {
+    background-color: #f26419;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-comprar:hover {
+    background-color: #d94e15;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Container dos produtos */
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffeedb;
+}
+
+/* Cada item de produto */
+.produto-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produto-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.produto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Título e descrição */
+.produto-item h2 {
+    margin: 10px 0;
+    color: #f26419;
+    font-size: 22px;
+}
+
+.produto-item p {
+    color: #333;
+    padding: 0 10px 20px 10px;
+}
+
+/* Estilização dos botões */
+
+button, .button {
+    background-color: #FFA726; /* Laranja claro */
+    color: #000; /* Texto preto */
+    border: 2px solid #FF9800; /* Borda laranja mais escura */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de clique */
+    text-decoration: none; /* Remove sublinhado se for <a> */
+    display: inline-block; /* Garante que funciona como botão */
+    transition: background-color 0.3s ease; /* Efeito suave */
+}
+
+/* Efeito hover ao passar o mouse */
+button:hover, .button:hover {
+    background-color: #FFB74D; /* Laranja um pouco mais claro */
+    border-color: #FB8C00; /* Borda mais destacada */
+}
+
+
+/* Container do formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+.form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #FFA726; /* Laranja claro */
+    color: #fff;
+    border: 2px solid #FF9800; /* Borda laranja */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFB74D; /* Laranja mais claro */
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do título "PROMOÇÃO RELÂMPAGO" com efeito RGB */
+.promocao {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 30px 0;
+    animation: rgbEffect 3s infinite alternate;
+}
+
+/* Efeito RGB */
+@keyframes rgbEffect {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: purple; }
+}
+
+/* Estilos das ofertas */
+.ofertas-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.oferta {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.oferta h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.oferta p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.oferta-imagem {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o contato */
+.contato-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contato-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contato-container strong {
+    font-weight: bold;
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}

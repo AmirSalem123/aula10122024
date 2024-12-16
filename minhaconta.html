@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mercadinho</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="minhaconta.html">Minha Conta</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Minha Conta</h1>
+        <div class="form-container">
+            <!-- Formulário de Cadastro -->
+            <form action="#" method="post" class="form">
+                <h2>Cadastre-se</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                
+                <button type="submit" class="button">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mercadinho - Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Simulando um banco de dados simples de e-mails já cadastrados
+    const usuariosCadastrados = ["exemplo@dominio.com", "teste@dominio.com"];
+
+    // Função para verificar se o e-mail já está cadastrado
+    function validarCadastro(event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        // Obtendo o e-mail do campo de input
+        const email = document.getElementById("email").value;
+
+        // Verificando se o e-mail já foi cadastrado
+        if (usuariosCadastrados.includes(email)) {
+            alert("Erro no Cadastro, E-mail já utilizado");
+        } else {
+            // Simulando a adição do e-mail ao banco de dados
+            usuariosCadastrados.push(email);
+            alert("Cadastro Concluído");
+            // Opcionalmente, limpar o formulário após o cadastro
+            document.querySelector("form").reset();
+        }
+    }
+
+    // Adicionando o evento de submit para chamar a função validarCadastro
+    document.querySelector("form").addEventListener("submit", validarCadastro);
+</script>
+
+</html>
